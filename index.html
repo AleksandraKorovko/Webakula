@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Webakula</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="home">
+<div class="wrapper">
+	<header class="header">
+		<div class="container">
+			<div class="header-wrapper flex">
+				<div class="logo-header flex">
+					<a href="#"><img class="logo" alt="" src="img/logo.png"></a>
+				</div>
+				<div>
+					<div class="header-contacts flex">
+						<div class="header-contacts-info flex">
+							<div class="addres address-photo"><a href="#">г. Харьков, ул. Мироносицкая 10а</a></div>
+							<div class="phone"><a href="tel:+380999908100">+38 (099) 990-81-00  (viber, telegram)</a></div>
+						</div>
+						<div class="social-i flex">
+							<a class="icon icon-f" href="#"></a>
+							<a class="icon icon-i" href="#"></a>
+						</div>
+					</div>
+					<nav class="navigation">
+						<span class="mobile-menu"></span>
+						<ul class="flex">
+							<li><a href="#">Главная</a></li>
+							<li class="dropdown-tours">
+								<a href="#">Туры</a>
+								<ul class="submenu-tours">
+									<li><a href="#">Горящие туры</a></li>
+									<li><a href="#">Поиск тура</a></li>
+									<li><a href="#">Туры по Украине</a></li>
+									<li><a href="#">Экскурсионные туры</a></li>
+									<li><a href="#">Week end туры</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Страны</a></li>
+                    		<li class="dropdown-services">
+                        		<a href="#">Услуги</a>
+                        		<ul class="submenu-services">
+                            		<li><a href="#">Авиабилеты</a></li>
+                           			 <li><a href="#">Визовая поддержка</a></li>
+                            		<li><a href="#">Индивидуальный трансфер</a></li>
+                           			 <li><a href="#">Подарочные сертификаты</a></li>
+                           			<li><a href="#">Бронирование отелей и апартаментов</a></li>
+                            		<li><a href="#">Как забронировать и оплатить тур</a></li>
+                        		</ul>
+                    		</li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>	
+	<main class="main">
+		<div class="swiper-container main-slider">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="img/banner1.jpg" alt="slide">
+				</div>
+				<div class="swiper-slide">
+					<img src="img/banner2.jpg" alt="slide">
+				</div>
+				<div class="swiper-slide">
+					<img src="img/banner3.jpg" alt="slide">
+				</div>
+			</div>
+		</div>
+		<div class="best-deals">
+			<div class="best-deals-block">
+				<div class="title30-b flex">Лучшие предложения по солнечному Египту из Харькова</div>
+				<div class="btn flex">
+                <input type="submit" name="submit" value="Получить предложение">
+                </div>
+            </div>
+		</div>
+			<div class="container block-advantages">
+				<div class="title24">Наши преимушества</div>
+				<div class="two-columns flex">
+					<div class="col-half-l">
+						<div class="img-inner">
+                            <img src="img/foto.jpg" alt="foto">
+                        </div>
+					</div>
+					<div class="col-half-r flex">
+						<p>Очень долго подбирали разные варианты для того, чтобы отпраздновать свой юбилейный День рождения в путешествии и не могли определиться... Решили обратиться за помощью в турагенство. Гульнара, выслушав все пожелания, предложила отдых в Турции, отель Justiniano Club Park Conti 5* в Окурджалар возле Аланьи. Мы очень благодарны ей за предложенный вариант!!!! Отдых получился отличный! Отель с большой ухоженной территорией, внимательный обслуживающий персонал. Отличный номер с видом на море. </p>
+					</div>
+				</div>
+			</div>
+		<div class="offers">
+			<div class="container">
+				<div class="title24">Хочу предложение по туру</div>
+					<div class="offers-info">
+						<form class="contact-form flex">
+                             <div class="form-group">
+                                 <input type="text" class="form-control" placeholder="Имя" required="required">
+                             </div>
+                             <div class="form-group">
+                                 <input type="email" class="form-control" placeholder="Email" required="required">
+                             </div>
+                             <div class="form-group">
+                                 <input type="text" class="form-control" placeholder="Телефон" required="required">
+                             </div>
+                             <div class="form-group">
+                                <select class="country" name="country" id="country">
+                                	<option value="Страна тура" selected="selected">Страна тура</option>
+                                	<option value="Турция">Турция</option>
+                                	<option value="Египет">Египет</option>
+                                	<option value="Шри-Ланка">Шри-Ланка</option>  
+                                	<option value="Доминикана">Доминикана</option>  
+                                </select>
+							</div>
+                             <div  class="btn">
+                   				<input  type="submit" name="submit" value="Получить предложение">
+                   			</div>
+                         </form>             
+					</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer-wraper">
+		<div class="container footer flex">
+			<div class="info-footer">
+			<div class="logo-footer">
+				<a href="#"><img class="logo" alt="" src="img/logo2.png"></a>
+			</div>
+			<p class="info-text">Кураж тур агенство,которое предоставляет услуги по поиску, оформлению и подбору туров для вас и ваших родных.</p>
+			<p><a href="#">Создание сайта —</a></p>
+			</div>
+			<div class="navigation-footer flex">
+				<p class="title18-b">Навигация</p>
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Туры</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Услуги</a></li>
+				</ul>
+			</div>
+			<div class="support flex">
+				<p class="title18-b">Поддержка</p>
+				<ul>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Обратная связь</a></li>
+				</ul>
+			</div>
+			<div class="contacts-footer flex">
+				<p class="title18-b">Контакты</p>
+				<ul>
+					<li class="addres-foter"><a href="#">г. Харьков, ул. Лермонтовская 10а</a></li>
+					<li class="telephone-foter"><a href="tel:+380999908100">+38 (099) 990-81-00</a></li>
+				</ul>
+				<div class="social-i-footer flex">
+				<a class="icon icon-f" href="#"></a>
+				<a class="icon icon-i" href="#"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
