@@ -26,13 +26,21 @@ jQuery(document).ready(function () {
     $('.navigation ul').toggleClass('active');
 });
 
-      var mySwiper = new Swiper('.main-slider', {
-        speed: 400,
-        autoplay: {
-            delay: 5000,
-        },
-        loop: true,
-    });
+    $(function(){
+     $('.single-item').slick({
+        autoplay: true,
+    autoplaySpeed: 3000,
+    infinite: true,
+    arrows: false,
+    boolean: true,
+        
+     });
+
+     });
+
+      $(function(){
+    $("#container").clickCarousel({margin: 10});
+});
 
 });
 
