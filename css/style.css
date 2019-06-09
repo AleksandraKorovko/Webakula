@@ -48,11 +48,17 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
-
-
 .wrapper {
     overflow: hidden;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .flex {
@@ -247,12 +253,12 @@ a {
 }
 .navigation .submenu-tours{
     width: 195px;
-    max-height: 282px;
+    max-height: 266px;
     overflow-y: auto;
 }
 .navigation .submenu-services{
     width: 240px;
-    max-height: 282px;
+    max-height: 266px;
     overflow-y: auto;
 }
 .submenu-services a,
@@ -265,6 +271,9 @@ a {
 .main{
     position: relative;
     margin-top: -94px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
 }
 .slider-img > img{
     height: 735px;
@@ -293,7 +302,9 @@ height: 175px;
 .multiple-items{
     margin: 72px 10px 75px;
     left: 0;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .tours{
     background: #f8f7f7;
@@ -314,9 +325,19 @@ height: 175px;
     padding-bottom: 9px;
     line-height: 20px;
 }
+.product-item .title17-b{
+    white-space: nowrap;
+    overflow: hidden;
+}
 .product-p1{
     line-height: 20px;
     margin: 14px 0 20px;
+    white-space: wrap;
+    height: 40px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+
 }
 .product-p:before {
     content: '';
@@ -330,7 +351,9 @@ height: 175px;
     background-size: contain;
 }
 .product-price{
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .product-price sup{
     font-size: 11px;
@@ -377,7 +400,7 @@ height: 175px;
     background: #f8f7f7;
 }
 .block-advantages{
-    padding: 45px 55px 75px 0;
+    padding: 45px 0 75px;
 }
 .block-advantages .title24{
     margin-bottom: 48px;
@@ -401,9 +424,28 @@ height: 175px;
         -ms-flex-align: center;
             align-items: center;
 }
-.col-half-r p{
+.advantages-info{
     font-size: 16px;
     line-height: 24px;
+    overflow-y: auto;
+    height: 187px;
+    padding-right: 54px;
+}
+.advantages-info::-webkit-scrollbar {
+    width: 8px;
+    background: #f8f7f7;
+}
+.submenu-tours::-webkit-scrollbar,
+.submenu-services::-webkit-scrollbar {
+    width: 8px;
+    background: rgb(51, 151, 226);
+}
+.submenu-tours::-webkit-scrollbar-thumb,
+.submenu-services::-webkit-scrollbar-thumb,
+.advantages-info::-webkit-scrollbar-thumb {
+    background: url(../img/scroll.png) no-repeat;
+    width: 8px;
+    height: 8px;
 }
 .img-inner {
     height: 317px;
@@ -715,18 +757,22 @@ select > option{
 .best-deals-block > .btn {
     margin-top: 20px;
 }
+}
 @media (max-width: 907px) {
 select.country {
         margin-top: 20px;
     }
      .tours{
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
    } 
    .product-item {
     width: 100%;
 }
     .carousel-img{
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
      width: 100%;
      margin-right: 0;
     }
@@ -831,7 +877,10 @@ select.country {
             order: 3;
 }
 .navigation .submenu-services {
-    max-height: 184px;
+    height: 184px;
+    }
+.navigation .submenu-tours {
+    height: 284px;
     }
 }
 @media (max-width: 800px) {
@@ -842,6 +891,12 @@ select.country {
 .best-deals {
     margin-top: -180px;
     padding: 15px 10px 15px 10px;
+}
+.block-advantages {
+    padding: 45px 15px 0;
+}
+.advantages-info {
+    padding-right: 24px;
 }
 }
 @media (max-width: 727px) {
@@ -892,15 +947,30 @@ select.country {
 .footer-wraper {
     padding: 20px 0 20px 60px;
 }
+.block-advantages {
+    padding: 20px 15px 20px;
+}
+.advantages-info {
+    padding-right: 8px;
+}
 }
 @media (max-width: 677px) {
 select.country {
     margin-top: 20px;
 }
-@media (max-width: 660px) {
+}
+@media (max-width: 661px) {
     .tours{
-    flex-wrap: no-wrap;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
    } 
+   .product-item {
+    width: 60%;
+}
+.carousel-img{
+width: 40%;
+    padding-right: 10px;
+ }
 }
 @media (max-width: 638px) {
 select.country {
@@ -954,13 +1024,16 @@ select.country{
 }
 @media (max-width: 450px) {
    .tours{
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
    } 
    .product-item {
     width: 100%;
 }
     .carousel-img{
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
      width: 100%;
      margin-right: 0;
     }
