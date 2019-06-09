@@ -247,9 +247,13 @@ a {
 }
 .navigation .submenu-tours{
     width: 195px;
+    max-height: 282px;
+    overflow-y: auto;
 }
 .navigation .submenu-services{
     width: 240px;
+    max-height: 282px;
+    overflow-y: auto;
 }
 .submenu-services a,
 .submenu-tours a{
@@ -826,6 +830,9 @@ select.country {
         -ms-flex-order: 3;
             order: 3;
 }
+.navigation .submenu-services {
+    max-height: 184px;
+    }
 }
 @media (max-width: 800px) {
  .slider-img > img {
