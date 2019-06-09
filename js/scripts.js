@@ -39,7 +39,36 @@ jQuery(document).ready(function () {
      });
 
       $(function(){
-    $("#container").clickCarousel({margin: 10});
+       $('.multiple-items').slick({
+      infinite: true,
+      dots: false,
+      prevArrow: '<div class="prev"></div>',
+      nextArrow: '<div class="next"></div>',
+      slidesToShow: 3,
+      slidesToScroll: 1,
+    responsive: [
+        {
+          breakpoint: 993,
+          settings: {
+            slidesToShow: 2,
+            arrows: false,
+            autoplay: true,
+            draggable: true,
+    autoplaySpeed: 3000,
+          }
+        },
+        {
+          breakpoint: 660,
+          settings: {
+            slidesToShow: 1,
+            arrows: false,
+            autoplay: true,
+            draggable: true,
+    autoplaySpeed: 3000,
+          }
+        }
+    ]
+});
 });
 
 });

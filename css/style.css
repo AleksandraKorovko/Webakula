@@ -46,6 +46,7 @@ ul {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -68,6 +69,17 @@ a {
 .title30-b{
     font-size: 30px;
     font-weight: 600;
+}
+.title17-b{
+    font-size: 17px;
+    font-weight: 600;
+}
+.title20-b{
+    font-size: 20px;
+    font-weight: 600;
+}
+.title20{
+    font-size: 20px;
 }
 .title24{
     font-size: 24px;
@@ -253,52 +265,96 @@ a {
 .slider-img > img{
     height: 735px;
 }
-#wrapper{
-    position: relative;
-    margin: 50px 74px 50px 67px;
-    width: 100%;
-    height: 200px;
+.hot-popular li.active a{
+    color: #fbd341;
 }
-#container{
-position: absolute;
-top: 10px;
-left: 105px;
-right: 110px;
-height: 100%;
-width: 100%; 
-overflow: hidden;
+.hot-popular a{
+    color: #000;
+    margin-right: 32px;
 }
- 
-.tours img{
+.hot-popular{
+margin-top: 70px;
+}
+.carousel-img{
 height: 175px;
-width: 186px;
 cursor: pointer;
 overflow: hidden;
+border-radius: 7px;
+margin-right: 18px;
+width: 40%;
 }
- 
-#carouselLeft{
-position: absolute;
-top: 60px;
-left: 0px;
-cursor: pointer;
+.carousel-img > img{
+height: 175px;
 }
- 
-#carouselRight{
-position: absolute;
-top: 60px;
-right: 0;
-cursor: pointer;
+.multiple-items{
+    margin: 72px 10px 75px;
+    left: 0;
+    justify-content: center;
 }
 .tours{
-    position: absolute;
-    top: 0px;
-    justify-content: space-between;
-    padding: 13px 20px 14px 14px;
-    width: 33.3%;
     background: #f8f7f7;
+    padding: 13px 15px;
+    border-radius: 7px;
+    margin: 0 32px;
+}
+.product-item {
+    width: 60%;
+    margin: 11px 0 4px;
+    line-height: 20px;
+}
+.product-item a{
+    color: #000;
+}
+.product-p{
+    position: relative;
+    padding-bottom: 9px;
+    line-height: 20px;
+}
+.product-p1{
+    line-height: 20px;
+    margin: 14px 0 20px;
+}
+.product-p:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #eae9e9;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.product-price{
+    justify-content: space-between;
+}
+.product-price sup{
+    font-size: 11px;
+    color: #8a8a8a;
 }
 
-
+.more{
+    display: block;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%; 
+    background-color: #fbd341;
+    background: #fbd341 url(../img/icon11.png) no-repeat center;
+}
+.prev{
+    display: block;
+    width: 40px;
+    height: 19px;
+    margin-top: 114px;
+    background: url(../img/icon9.png) no-repeat center;
+}
+.next{
+    display: block;
+    width: 40px;
+    height: 19px;
+    margin-top: 114px;
+    background: url(../img/icon10.png) no-repeat center;
+}
 .best-deals{
     width: 70%;
     background: #7ea2be;
@@ -312,6 +368,9 @@ cursor: pointer;
 .best-deals-block > .btn{
     margin-top: 40px;
     margin-right: 545px;
+}
+.advantages1{
+    background: #f8f7f7;
 }
 .block-advantages{
     padding: 45px 55px 75px 0;
@@ -620,7 +679,7 @@ select > option{
     margin-left: 20px;
     }
     .block-advantages .title24 {
-    margin-bottom: 30px;
+    margin-bottom: 0;
     }
     .info-text:before, .logo-footer:before {
     width: 230px;
@@ -629,19 +688,44 @@ select > option{
     padding: 35px 34px 25px 100px;
     }
     select.country {
-        margin-top: 20px;
+        margin-top: 5px;
     }
+    .tours {
+    margin: 0 10px;
+}
+.hot-popular {
+    margin-top: 45px;
+}
+.multiple-items {
+    margin: 30px 10px 45px;
+}
+.footer-wraper {
+    padding: 45px 0 20px 60px;
+}
 }
 @media (max-width: 915px) {
-.slider-img > img{
-    height: 350px;
-}
 .best-deals {
     margin-top: -200px;
     padding: 20px 34px 15px 100px;
 }
 .best-deals-block > .btn {
     margin-top: 20px;
+}
+@media (max-width: 907px) {
+select.country {
+        margin-top: 20px;
+    }
+     .tours{
+    flex-wrap: wrap;
+   } 
+   .product-item {
+    width: 100%;
+}
+    .carousel-img{
+    align-items: center;
+     width: 100%;
+     margin-right: 0;
+    }
 }
 @media (max-width: 860px) {
     .mobile-menu {
@@ -708,9 +792,6 @@ select > option{
 .footer{
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-}
-.footer-wraper {
-    padding: 51px 0 26px 90px;
 }
 .footer p {
     margin-bottom: 15px;
@@ -795,11 +876,24 @@ select > option{
 .offers .title24 {
     margin-bottom: 20px;
 }
+.hot-popular {
+    margin-top: 20px;
+}
+.multiple-items {
+    margin: 20px 10px 20px;
+}
+.footer-wraper {
+    padding: 20px 0 20px 60px;
+}
 }
 @media (max-width: 677px) {
 select.country {
     margin-top: 20px;
 }
+@media (max-width: 660px) {
+    .tours{
+    flex-wrap: no-wrap;
+   } 
 }
 @media (max-width: 638px) {
 select.country {
@@ -850,6 +944,19 @@ select.country{
 #country {
     width: 100%;
 }
+}
+@media (max-width: 450px) {
+   .tours{
+    flex-wrap: wrap;
+   } 
+   .product-item {
+    width: 100%;
+}
+    .carousel-img{
+    align-items: center;
+     width: 100%;
+     margin-right: 0;
+    }
 }
 @media (max-width: 400px) {
     .best-deals {
